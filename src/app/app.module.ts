@@ -6,6 +6,11 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about.component';
 import { TravelComponent } from './travel.component';
 
+const appRoutes: Routes = [
+  { path: 'app-about', component: AboutComponent },
+  { path: 'app-travel', component: TravelComponent },
+];
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +19,9 @@ import { TravelComponent } from './travel.component';
   ],
   imports: [
     BrowserModule,
-    RouterModule
+    RouterModule.forRoot(
+      appRoutes
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,17 @@
-<h1>RESNET CONFERENCE WEB APP</h1>
-<nav>
-  <a routerLink="/app-about" routerLinkActive="active">About</a><br>
-  <a routerLink="/app-travel" routerLinkActive="active">Travel</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" routerLink="/app-home" routerLinkActive="active">Home</a>
+      <a class="nav-item nav-link" routerLink="/app-about" routerLinkActive="active">About</a>
+      <a class="nav-item nav-link" routerLink="/app-travel" routerLinkActive="active">Travel</a>
+      <a class="nav-item nav-link" routerLink="/app-events" routerLinkActive="active">Events</a>
+    </div>
+  </div>
 </nav>
-<router-outlet></router-outlet>
+<div class="container">
+    <h1>RESNET CONFERENCE WEB APP</h1>
+    <router-outlet></router-outlet>
+</div>
